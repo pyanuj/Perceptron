@@ -9,12 +9,17 @@ plt.style.use("fivethirtyeight")
 
 
 def prepare_data(df):
-    """it is used to separate the dependent variables and independent features
+    """It is used to seprate depandent and indepandent feature.
+
     Args:
-        df (pd.DataFrame): its the pandas DataFrame to
+        df (df (pd.DataFrame)): It's pandas DataFrame.     
+
     Returns:
-        tuple: it returns the tuples of dependent variables and independent variables
+        tuple: It returns the tuple of depandant and indepandent variable.
     """
+
+
+
     logging.info("Preparing the data by segregating the independent and dependent variables")
     x = df.drop("y", axis=1)
     y = df["y"]
@@ -22,11 +27,7 @@ def prepare_data(df):
 
 
 def save_model(model, filename):
-    """This saves the trained model to
-    Args:
-        model (python object): trained model to
-        filename (str): path to save the trained model
-    """
+
     logging.info("saving the trained model")
     model_dir = "models"
     os.makedirs(model_dir, exist_ok=True)  # ONLY CREATE IF MODEL_DIR DOES NOT EXISTS
@@ -38,9 +39,10 @@ def save_model(model, filename):
 
 def save_plot(df, file_name, model):
     """
-    :param df: its a dataframe
-    :param file_name: its path to save the plot
+    :param df: It's a DataFrame
+    :param file_name: It's path to save model
     :param model: trained model
+
     """
     def _create_base_plot(df):
         logging.info("creating the base plot")
