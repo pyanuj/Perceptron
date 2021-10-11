@@ -21,3 +21,11 @@ for i in range(10):
 ```bash
 git add . && git commit -m "docstring updated" && git push origin main
 ``` 
+
+## Table - 
+
+x1 | x2 | y
+-|-|-
+0|0|0
+0|1|0
+1|1|1 
