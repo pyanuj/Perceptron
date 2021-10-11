@@ -9,3 +9,15 @@ Perceptron
 ## Add Image - 
 ![Sample Image](Perceptron/plots/and.png)
 <img src="Perceptron\plots\and.png" alt="And gate image" width="500" height="600">
+
+# Python Code - 
+```python
+for i in range(10):
+    print(i)
+```
+
+# Command used -
+
+```bash
+git add . && git commit -m "docstring updated" && git push origin main
+``` 
